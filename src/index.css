@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+@layer base {
+  .DM {
+    font-family: "DM Serif Display", serif;
+  }
+}
