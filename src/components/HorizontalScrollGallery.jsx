@@ -450,16 +450,15 @@
 import { useEffect, useRef, useState } from "react";
 import { WebGLDistortion } from "./WebGLDistortion";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  balcanyVideos,
-  bathroomImages,
-  bedroomImages,
-  interiorVideos,
-  kitchen,
-  outdoorImages,
-  swimmingImages,
-} from "../utils/imges";
+
 import Model from "./Model";
+import { outdoorContent } from "../utils/outdoorContent";
+import { bedroomContent } from "../utils/bedroomContent";
+import { balcanyContent } from "../utils/balcanyContent";
+import { swimmingContent } from "../utils/swimmingContent";
+import { interiorContent } from "../utils/interiorContent";
+import { bathroomContent } from "../utils/bathroomContent";
+import { kitchenContent } from "../utils/kitchenContent";
 
 const HorizontalScrollGallery = () => {
   const containerRef = useRef(null);
@@ -473,13 +472,13 @@ const HorizontalScrollGallery = () => {
 
   // Data setup
   const images = {
-    outdoorImages,
-    bedroomImages,
-    balcanyVideos,
-    swimmingImages,
-    interiorVideos,
-    kitchen,
-    bathroomImages,
+    outdoorContent,
+    bedroomContent,
+    balcanyContent,
+    swimmingContent,
+    interiorContent,
+    kitchenContent,
+    bathroomContent,
   };
 
   const categoryLabels = {
@@ -603,20 +602,23 @@ const HorizontalScrollGallery = () => {
 
   useEffect(() => {
     if (isMobile) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Number(entry.target.dataset.index);
+            const firstItem = data[index]?.items[0];
+            if (entry.target && firstItem?.type === "image") {
+              setupWebGLEffect(entry.target, firstItem.src, index);
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-    webglRefs.current.forEach((canvas, index) => {
-      const firstItem = data[index]?.items[0];
-      if (canvas && firstItem?.type === "image") {
-        setupWebGLEffect(canvas, firstItem.src, index);
-      }
-    });
-
-    return () => {
-      webglRefs.current.forEach((canvas) => {
-        if (canvas?._cleanup) canvas._cleanup();
-      });
-      distortionEffects.current.forEach((effect) => effect?.destroy());
-    };
+    webglRefs.current.forEach((canvas) => canvas && observer.observe(canvas));
+    return () => observer.disconnect();
   }, [isMobile, data]);
 
   // Modal handlers
@@ -688,14 +690,18 @@ const HorizontalScrollGallery = () => {
                         <video
                           src={firstItem.src}
                           className="w-full h-full object-cover"
-                          autoPlay
-                          loop
+                          preload="none" // ⬅️ Don’t preload video
+                          playsInline
                           muted
+                          loop
+                          autoPlay={true} // ⬅️ Don’t autoplay background videos
+                          controls={false}
                         />
                       ) : (
                         <img
                           src={firstItem.src}
-                          alt=""
+                          alt={`${categoryName} background`}
+                          loading="lazy" // ⬅️ Load only when visible
                           className="w-full h-full object-cover"
                         />
                       )}
@@ -707,9 +713,12 @@ const HorizontalScrollGallery = () => {
                           <video
                             src={firstItem.src}
                             className="absolute top-0 left-0 w-full h-full object-cover cursor-pointer"
-                            autoPlay
-                            loop
+                            preload="none" // ⬅️ Don’t preload video
+                            playsInline
                             muted
+                            loop
+                            autoPlay={true} // ⬅️ Don’t autoplay background videos
+                            controls={false}
                             onClick={() => {
                               setCategory(items);
                               setIsModalOpen(true);
@@ -727,7 +736,8 @@ const HorizontalScrollGallery = () => {
                             />
                             <img
                               src={firstItem.src}
-                              alt=""
+                              alt={`${categoryName} preview`}
+                              loading="lazy" // ⬅️ Load only when visible
                               className="w-full h-full object-cover opacity-0"
                             />
                           </>
