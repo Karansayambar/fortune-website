@@ -457,8 +457,8 @@ import { bedroomContent } from "../utils/bedroomContent";
 import { balcanyContent } from "../utils/balcanyContent";
 import { swimmingContent } from "../utils/swimmingContent";
 import { interiorContent } from "../utils/interiorContent";
-import { bathroomContent } from "../utils/bathroomContent";
 import { kitchenContent } from "../utils/kitchenContent";
+import { bathroomContent } from "../utils/bathroomContent";
 
 const HorizontalScrollGallery = () => {
   const containerRef = useRef(null);
@@ -469,7 +469,6 @@ const HorizontalScrollGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const webglRefs = useRef([]);
   const distortionEffects = useRef([]);
-  const getAssetPath = (path) => `${import.meta.env.BASE_URL}${path}`;
 
   // Data setup
   const images = {
@@ -491,6 +490,8 @@ const HorizontalScrollGallery = () => {
     kitchen: "Kitchen",
     bathroomImages: "Bathrooms",
   };
+
+  console.log("images", images);
 
   const data = Object.entries(images).map(([key, value]) => {
     const [header, ...mediaItems] = value;
@@ -689,7 +690,7 @@ const HorizontalScrollGallery = () => {
                     <div className="w-[100%] absolute inset-0 opacity-30">
                       {firstItem.type === "video" ? (
                         <video
-                          src={getAssetPath(firstItem.src)}
+                          src={firstItem.src}
                           className="w-full h-full object-cover"
                           preload="none" // ⬅️ Don’t preload video
                           playsInline
@@ -700,7 +701,7 @@ const HorizontalScrollGallery = () => {
                         />
                       ) : (
                         <img
-                          src={getAssetPath(firstItem.src)}
+                          src={firstItem.src}
                           alt={`${categoryName} background`}
                           loading="lazy" // ⬅️ Load only when visible
                           className="w-full h-full object-cover"
@@ -712,7 +713,7 @@ const HorizontalScrollGallery = () => {
                       <div className="relative w-full h-[70vh] max-h-[800px] overflow-hidden shadow-2xl">
                         {firstItem.type === "video" ? (
                           <video
-                            src={getAssetPath(firstItem.src)}
+                            src={firstItem.src}
                             className="absolute top-0 left-0 w-full h-full object-cover cursor-pointer"
                             preload="none" // ⬅️ Don’t preload video
                             playsInline
@@ -736,7 +737,7 @@ const HorizontalScrollGallery = () => {
                               }}
                             />
                             <img
-                              src={getAssetPath(firstItem.src)}
+                              src={firstItem.src}
                               alt={`${categoryName} preview`}
                               loading="lazy" // ⬅️ Load only when visible
                               className="w-full h-full object-cover opacity-0"

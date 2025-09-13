@@ -1,9 +1,9 @@
-const bathroomVID1 = "../../public/bathroom/bathroom1.mp4";
-const bathroomVID2 = "../../public/bathroom/bathroom2.mp4";
-const bathroomVID3 = "../../public/bathroom/bathroom3.mp4";
-const bathroomVID4 = "../../public/bathroom/bathroom4.mp4";
-const bathroomVID5 = "../../public/bathroom/bathroom5.mp4";
-const bathroomVID6 = "../../public/bathroom/bathroom6.mp4";
+const bathroomVID1 = "../assets/bathroom/bathroom1.mp4";
+const bathroomVID2 = "../assets/bathroom/bathroom2.mp4";
+const bathroomVID3 = "../assets/bathroom/bathroom3.mp4";
+const bathroomVID4 = "../assets/bathroom/bathroom4.mp4";
+const bathroomVID5 = "../assets/bathroom/bathroom5.mp4";
+const bathroomVID6 = "../assets/bathroom/bathroom6.mp4";
 
 export const bathroomContent = [
   {

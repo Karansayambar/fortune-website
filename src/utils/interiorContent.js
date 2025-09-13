@@ -1,10 +1,10 @@
-const interiorVID1 = "../../public/interior/interior1.mp4";
-const interiorVID2 = "../../public/interior/interior2.mp4";
-const interiorVID3 = "../../public/interior/interior3.mp4";
-const interiorVID4 = "../../public/interior/interior4.mp4";
-const interiorVID5 = "../../public/interior/interior5.mp4";
-const interiorVID6 = "../../public/interior/interior6.mp4";
-const interiorVID7 = "../../public/interior/interior7.mp4";
+const interiorVID1 = "../assets/interior/interior1.mp4";
+const interiorVID2 = "../assets/interior/interior2.mp4";
+const interiorVID3 = "../assets/interior/interior3.mp4";
+const interiorVID4 = "../assets/interior/interior4.mp4";
+const interiorVID5 = "../assets/interior/interior5.mp4";
+const interiorVID6 = "../assets/interior/interior6.mp4";
+const interiorVID7 = "../assets/interior/interior7.mp4";
 
 export const interiorContent = [
   {

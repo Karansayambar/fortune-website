@@ -1,13 +1,13 @@
-const balcanyVID1 = "../../public/balcany/balcany4.mp4";
-const balcanyVID2 = "../../public/balcany/balcany2.mp4";
-const balcanyVID3 = "../../public/balcany/balcany3.mp4";
-const balcanyVID4 = "../../public/balcany/balcany1.mp4";
-const balcanyVID5 = "../../public/balcany/balcany5.mp4";
-const balcanyVID6 = "../../public/balcany/balcany6.mp4";
-const balcanyIMG1 = "../../public/balcany/balcanyIMG1.JPG";
-const balcanyIMG2 = "../../public/balcany/balcanyIMG2.JPG";
-const balcanyIMG3 = "../../public/balcany/balcanyIMG3.JPG";
-const balcanyIMG4 = "../../public/balcany/balcanyIMG4.JPG";
+const balcanyVID1 = "../assets/balcany/balcany4.mp4";
+const balcanyVID2 = "../assets/balcany/balcany2.mp4";
+const balcanyVID3 = "../assets/balcany/balcany3.mp4";
+const balcanyVID4 = "../assets/balcany/balcany1.mp4";
+const balcanyVID5 = "../assets/balcany/balcany5.mp4";
+const balcanyVID6 = "../assets/balcany/balcany6.mp4";
+const balcanyIMG1 = "../assets/balcany/balcanyIMG1.JPG";
+const balcanyIMG2 = "../assets/balcany/balcanyIMG2.JPG";
+const balcanyIMG3 = "../assets/balcany/balcanyIMG3.JPG";
+const balcanyIMG4 = "../assets/balcany/balcanyIMG4.JPG";
 
 console.log("balcanyVID1", balcanyVID1);
 

@@ -1,14 +1,14 @@
-const bedroomImg1 = "../../public/bedroom/bedroomIMG1.JPG";
-const bedroomImg2 = "../../public/bedroom/bedroomIMG2.JPG";
-const bedroomImg3 = "../../public/bedroom/bedroomIMG3.JPG";
-const bedroomImg4 = "../../public/bedroom/bedroomIMG4.JPG";
-const bedroomImg5 = "../../public/bedroom/bedroomIMG5.JPG";
-const bedroomVID1 = "../../public/bedroom/bedroom1.mp4";
-const bedroomVID2 = "../../public/bedroom/bedroom2.mp4";
-const bedroomVID3 = "../../public/bedroom/bedroom3.mp4";
-const bedroomVID4 = "../../public/bedroom/bedroom4.mp4";
-const bedroomVID5 = "../../public/bedroom/bedroom5.mp4";
-const bedroomVID6 = "../../public/bedroom/bedroom6.mp4";
+const bedroomImg1 = "../assets/bedroom/bedroomIMG1.JPG";
+const bedroomImg2 = "../assets/bedroom/bedroomIMG2.JPG";
+const bedroomImg3 = "../assets/bedroom/bedroomIMG3.JPG";
+const bedroomImg4 = "../assets/bedroom/bedroomIMG4.JPG";
+const bedroomImg5 = "../assets/bedroom/bedroomIMG5.JPG";
+const bedroomVID1 = "../assets/bedroom/bedroom1.mp4";
+const bedroomVID2 = "../assets/bedroom/bedroom2.mp4";
+const bedroomVID3 = "../assets/bedroom/bedroom3.mp4";
+const bedroomVID4 = "../assets/bedroom/bedroom4.mp4";
+const bedroomVID5 = "../assets/bedroom/bedroom5.mp4";
+const bedroomVID6 = "../assets/bedroom/bedroom6.mp4";
 
 export const bedroomContent = [
   {

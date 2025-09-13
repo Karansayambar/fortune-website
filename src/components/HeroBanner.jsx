@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-const bannerImg = "../../public/bannerImg.JPG";
-const bb = "../../public/outdoor/outdoor1.mp4";
+import { useState } from "react";
+const bannerImg = "../assets/bannerImg.JPG";
+const bb = "../assets/outdoor/outdoor1.mp4";
 
 const HeroBanner = () => {
   const [videoError, setVideoError] = useState(false);
