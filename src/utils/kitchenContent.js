@@ -1,7 +1,7 @@
-const kitchenVID1 = "../../public/assets/kitchen/kitchen1.mp4";
-const kitchenVID2 = "../../public/assets/kitchen/kitchen2.mp4";
-const kitchenVID3 = "../../public/assets/kitchen/kitchen3.mp4";
-const kitchenVID4 = "../../public/assets/kitchen/kitchen4.mp4";
+const kitchenVID1 = "../../public/kitchen/kitchen1.mp4";
+const kitchenVID2 = "../../public/kitchen/kitchen2.mp4";
+const kitchenVID3 = "../../public/kitchen/kitchen3.mp4";
+const kitchenVID4 = "../../public/kitchen/kitchen4.mp4";
 
 export const kitchenContent = [
   {

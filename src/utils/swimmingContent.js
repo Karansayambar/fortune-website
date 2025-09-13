@@ -1,18 +1,18 @@
-const swimmingIMG1 = "../../public/assets/swimming/poolIMG1.JPG";
-const swimmingIMG2 = "../../public/assets/swimming/poolIMG2.JPG";
-const swimmingIMG3 = "../../public/assets/swimming/poolIMG3.JPG";
-const swimmingIMG4 = "../../public/assets/swimming/poolIMG4.JPG";
-const swimmingIMG5 = "../../public/assets/swimming/poolIMG5.JPG";
-const swimmingIMG6 = "../../public/assets/swimming/poolIMG6.JPG";
-const swimmingIMG7 = "../../public/assets/swimming/poolIMG7.JPG";
-const swimmingVID3 = "../../public/assets/swimming/pool1.mp4";
-const swimmingVID2 = "../../public/assets/swimming/pool2.mp4";
-const swimmingVID1 = "../../public/assets/swimming/pool3.mp4";
-const swimmingVID4 = "../../public/assets/swimming/pool4.mp4";
-const swimmingVID5 = "../../public/assets/swimming/pool5.mp4";
-const swimmingVID6 = "../../public/assets/swimming/pool6.mp4";
-const swimmingVID7 = "../../public/assets/swimming/pool7.mp4";
-const swimmingVID8 = "../../public/assets/swimming/pool8.mp4";
+const swimmingIMG1 = "../../public/swimming/poolIMG1.JPG";
+const swimmingIMG2 = "../../public/swimming/poolIMG2.JPG";
+const swimmingIMG3 = "../../public/swimming/poolIMG3.JPG";
+const swimmingIMG4 = "../../public/swimming/poolIMG4.JPG";
+const swimmingIMG5 = "../../public/swimming/poolIMG5.JPG";
+const swimmingIMG6 = "../../public/swimming/poolIMG6.JPG";
+const swimmingIMG7 = "../../public/swimming/poolIMG7.JPG";
+const swimmingVID3 = "../../public/swimming/pool1.mp4";
+const swimmingVID2 = "../../public/swimming/pool2.mp4";
+const swimmingVID1 = "../../public/swimming/pool3.mp4";
+const swimmingVID4 = "../../public/swimming/pool4.mp4";
+const swimmingVID5 = "../../public/swimming/pool5.mp4";
+const swimmingVID6 = "../../public/swimming/pool6.mp4";
+const swimmingVID7 = "../../public/swimming/pool7.mp4";
+const swimmingVID8 = "../../public/swimming/pool8.mp4";
 
 export const swimmingContent = [
   {
