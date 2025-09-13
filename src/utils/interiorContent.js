@@ -1,10 +1,10 @@
-const interiorVID1 = "../assets/interior/interior1.mp4";
-const interiorVID2 = "../assets/interior/interior2.mp4";
-const interiorVID3 = "../assets/interior/interior3.mp4";
-const interiorVID4 = "../assets/interior/interior4.mp4";
-const interiorVID5 = "../assets/interior/interior5.mp4";
-const interiorVID6 = "../assets/interior/interior6.mp4";
-const interiorVID7 = "../assets/interior/interior7.mp4";
+import interiorVID1 from "../assets/interior/interior1.mp4";
+import interiorVID2 from "../assets/interior/interior2.mp4";
+import interiorVID3 from "../assets/interior/interior3.mp4";
+import interiorVID4 from "../assets/interior/interior4.mp4";
+import interiorVID5 from "../assets/interior/interior5.mp4";
+import interiorVID6 from "../assets/interior/interior6.mp4";
+import interiorVID7 from "../assets/interior/interior7.mp4";
 
 export const interiorContent = [
   {

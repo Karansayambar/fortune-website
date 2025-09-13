@@ -1,14 +1,14 @@
-const outdoorVID1 = "../assets/outdoor/outdoor1.mp4";
-const outdoorVID2 = "../assets/outdoor/outdoor2.mp4";
-const outdoorVID3 = "../assets/outdoor/outdoor3.mp4";
-const outdoorVID4 = "../assets/outdoor/outdoor4.mp4";
-const outdoorIMG1 = "../assets/outdoor/outdoorIMG1.JPG";
-const outdoorIMG2 = "../assets/outdoor/outdoorIMG2.JPG";
-const outdoorIMG3 = "../assets/outdoor/outdoorIMG3.JPG";
-const outdoorIMG4 = "../assets/outdoor/outdoorIMG4.JPG";
-const outdoorIMG5 = "../assets/outdoor/outdoorIMG5.JPG";
-const outdoorIMG6 = "../assets/outdoor/outdoorIMG6.JPG";
-const outdoorIMG7 = "../assets/outdoor/outdoorIMG7.JPG";
+import outdoorVID1 from "../assets/outdoor/outdoor1.mp4";
+import outdoorVID2 from "../assets/outdoor/outdoor2.mp4";
+import outdoorVID3 from "../assets/outdoor/outdoor3.mp4";
+import outdoorVID4 from "../assets/outdoor/outdoor4.mp4";
+import outdoorIMG1 from "../assets/outdoor/outdoorIMG1.JPG";
+import outdoorIMG2 from "../assets/outdoor/outdoorIMG2.JPG";
+import outdoorIMG3 from "../assets/outdoor/outdoorIMG3.JPG";
+import outdoorIMG4 from "../assets/outdoor/outdoorIMG4.JPG";
+import outdoorIMG5 from "../assets/outdoor/outdoorIMG5.JPG";
+import outdoorIMG6 from "../assets/outdoor/outdoorIMG6.JPG";
+import outdoorIMG7 from "../assets/outdoor/outdoorIMG7.JPG";
 
 export const outdoorContent = [
   {

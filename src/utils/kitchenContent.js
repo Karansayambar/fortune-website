@@ -1,7 +1,7 @@
-const kitchenVID1 = "../assets/kitchen/kitchen1.mp4";
-const kitchenVID2 = "../assets/kitchen/kitchen2.mp4";
-const kitchenVID3 = "../assets/kitchen/kitchen3.mp4";
-const kitchenVID4 = "../assets/kitchen/kitchen4.mp4";
+import kitchenVID1 from "../assets/kitchen/kitchen1.mp4";
+import kitchenVID2 from "../assets/kitchen/kitchen2.mp4";
+import kitchenVID3 from "../assets/kitchen/kitchen3.mp4";
+import kitchenVID4 from "../assets/kitchen/kitchen4.mp4";
 
 export const kitchenContent = [
   {

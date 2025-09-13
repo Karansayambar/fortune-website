@@ -1,18 +1,18 @@
-const swimmingIMG1 = "../assets/swimming/poolIMG1.JPG";
-const swimmingIMG2 = "../assets/swimming/poolIMG2.JPG";
-const swimmingIMG3 = "../assets/swimming/poolIMG3.JPG";
-const swimmingIMG4 = "../assets/swimming/poolIMG4.JPG";
-const swimmingIMG5 = "../assets/swimming/poolIMG5.JPG";
-const swimmingIMG6 = "../assets/swimming/poolIMG6.JPG";
-const swimmingIMG7 = "../assets/swimming/poolIMG7.JPG";
-const swimmingVID3 = "../assets/swimming/pool1.mp4";
-const swimmingVID2 = "../assets/swimming/pool2.mp4";
-const swimmingVID1 = "../assets/swimming/pool3.mp4";
-const swimmingVID4 = "../assets/swimming/pool4.mp4";
-const swimmingVID5 = "../assets/swimming/pool5.mp4";
-const swimmingVID6 = "../assets/swimming/pool6.mp4";
-const swimmingVID7 = "../assets/swimming/pool7.mp4";
-const swimmingVID8 = "../assets/swimming/pool8.mp4";
+import swimmingIMG1 from "../assets/swimming/poolIMG1.JPG";
+import swimmingIMG2 from "../assets/swimming/poolIMG2.JPG";
+import swimmingIMG3 from "../assets/swimming/poolIMG3.JPG";
+import swimmingIMG4 from "../assets/swimming/poolIMG4.JPG";
+import swimmingIMG5 from "../assets/swimming/poolIMG5.JPG";
+import swimmingIMG6 from "../assets/swimming/poolIMG6.JPG";
+import swimmingIMG7 from "../assets/swimming/poolIMG7.JPG";
+import swimmingVID3 from "../assets/swimming/pool1.mp4";
+import swimmingVID2 from "../assets/swimming/pool2.mp4";
+import swimmingVID1 from "../assets/swimming/pool3.mp4";
+import swimmingVID4 from "../assets/swimming/pool4.mp4";
+import swimmingVID5 from "../assets/swimming/pool5.mp4";
+import swimmingVID6 from "../assets/swimming/pool6.mp4";
+import swimmingVID7 from "../assets/swimming/pool7.mp4";
+import swimmingVID8 from "../assets/swimming/pool8.mp4";
 
 export const swimmingContent = [
   {

@@ -1,15 +1,13 @@
-const balcanyVID1 = "../assets/balcany/balcany4.mp4";
-const balcanyVID2 = "../assets/balcany/balcany2.mp4";
-const balcanyVID3 = "../assets/balcany/balcany3.mp4";
-const balcanyVID4 = "../assets/balcany/balcany1.mp4";
-const balcanyVID5 = "../assets/balcany/balcany5.mp4";
-const balcanyVID6 = "../assets/balcany/balcany6.mp4";
-const balcanyIMG1 = "../assets/balcany/balcanyIMG1.JPG";
-const balcanyIMG2 = "../assets/balcany/balcanyIMG2.JPG";
-const balcanyIMG3 = "../assets/balcany/balcanyIMG3.JPG";
-const balcanyIMG4 = "../assets/balcany/balcanyIMG4.JPG";
-
-console.log("balcanyVID1", balcanyVID1);
+import balcanyVID1 from "../assets/balcany/balcany4.mp4";
+import balcanyVID2 from "../assets/balcany/balcany2.mp4";
+import balcanyVID3 from "../assets/balcany/balcany3.mp4";
+import balcanyVID4 from "../assets/balcany/balcany1.mp4";
+import balcanyVID5 from "../assets/balcany/balcany5.mp4";
+import balcanyVID6 from "../assets/balcany/balcany6.mp4";
+import balcanyIMG1 from "../assets/balcany/balcanyIMG1.JPG";
+import balcanyIMG2 from "../assets/balcany/balcanyIMG2.JPG";
+import balcanyIMG3 from "../assets/balcany/balcanyIMG3.JPG";
+import balcanyIMG4 from "../assets/balcany/balcanyIMG4.JPG";
 
 export const balcanyContent = [
   {
