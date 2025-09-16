@@ -1,5 +1,5 @@
-import balcanyVID1 from "../assets/balcany/balcany4.mp4";
-import balcanyVID2 from "../assets/balcany/balcany2.mp4";
+import balcanyVID1 from "../assets/balcany/balcany2.mp4";
+import balcanyVID2 from "../assets/balcany/balcany4.mp4";
 import balcanyVID3 from "../assets/balcany/balcany3.mp4";
 import balcanyVID4 from "../assets/balcany/balcany1.mp4";
 import balcanyVID5 from "../assets/balcany/balcany5.mp4";

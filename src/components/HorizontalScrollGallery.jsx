@@ -675,18 +675,14 @@ const HorizontalScrollGallery = () => {
                 return (
                   <div
                     key={index}
-                    className="flex-shrink-0 w-full h-screen relative flex flex-col items-center justify-center p-4 bg-black"
+                    className="flex-shrink-0 w-full h-screen relative flex items-center justify-center p-4 bg-black"
                   >
-                    <div className="absolute top-1/2 left-20 z-20 text-center mb-6">
+                    <div className=" z-20 text-center mb-6">
                       <h2 className="text-6xl font-bold text-white">
                         {sectionTitle}
                       </h2>
                     </div>
-                    <div className="absolute top-1/2 right-20 w-100 z-20 text-center mb-6">
-                      <p className="text-2xl text-gray-300">
-                        {sectionDescription}
-                      </p>
-                    </div>
+
                     <div className="w-[100%] absolute inset-0 opacity-30">
                       {firstItem.type === "video" ? (
                         <video
@@ -710,22 +706,53 @@ const HorizontalScrollGallery = () => {
                       <div className="absolute inset-0 bg-black/30" />
                     </div>
                     <div className="relative z-10 w-full max-w-6xl mx-auto">
-                      <div className="relative w-full h-[70vh] max-h-[800px] overflow-hidden shadow-2xl">
+                      <div className="relative w-full h-[70vh] max-h-[800px] overflow-hidden shadow-2xl rounded-[50px]">
                         {firstItem.type === "video" ? (
-                          <video
-                            src={firstItem.src}
-                            className="absolute top-0 left-0 w-full h-full object-cover cursor-pointer"
-                            preload="none" // ⬅️ Don’t preload video
-                            playsInline
-                            muted
-                            loop
-                            autoPlay={true} // ⬅️ Don’t autoplay background videos
-                            controls={false}
-                            onClick={() => {
-                              setCategory(items);
-                              setIsModalOpen(true);
-                            }}
-                          />
+                          <div>
+                            <video
+                              src={firstItem.src}
+                              className="absolute top-0 left-0 w-full h-full object-cover cursor-pointer"
+                              autoPlay
+                              loop
+                              muted
+                              onClick={() => {
+                                setCategory(items);
+                                setIsModalOpen(true);
+                              }}
+                            />
+                            {/* Overlay */}
+                            <div
+                              className="absolute inset-0 bg-black/30 flex items-center justify-center cursor-pointer"
+                              onClick={() => {
+                                setCategory(items);
+                                setIsModalOpen(true);
+                              }}
+                            >
+                              <div className="animate-bounce flex">
+                                <div className="flex flex-col text-center text-amber-400">
+                                  <p className="text-amber-400 mb-2 font-bold text-xl">
+                                    To Explore More
+                                  </p>
+                                  <p className="text-amber-400 mb-2 font-bold text-xl">
+                                    Click Here
+                                  </p>
+                                </div>
+                                <svg
+                                  className="w-15 h-18 mx-auto text-amber-400"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
                         ) : (
                           <>
                             <canvas
@@ -745,6 +772,11 @@ const HorizontalScrollGallery = () => {
                           </>
                         )}
                       </div>
+                    </div>
+                    <div className=" w-100 z-20 text-center mb-6 p-5">
+                      <p className="text-2xl text-gray-300">
+                        {sectionDescription}
+                      </p>
                     </div>
                   </div>
                 );

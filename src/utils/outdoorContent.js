@@ -7,7 +7,7 @@ import outdoorIMG2 from "../assets/outdoor/outdoorIMG2.JPG";
 import outdoorIMG3 from "../assets/outdoor/outdoorIMG3.JPG";
 import outdoorIMG4 from "../assets/outdoor/outdoorIMG4.JPG";
 import outdoorIMG5 from "../assets/outdoor/outdoorIMG5.JPG";
-import outdoorIMG6 from "../assets/outdoor/outdoorIMG6.JPG";
+// import outdoorIMG6 from "../assets/outdoor/outdoorIMG6.JPG";
 import outdoorIMG7 from "../assets/outdoor/outdoorIMG7.JPG";
 
 export const outdoorContent = [
@@ -70,12 +70,12 @@ export const outdoorContent = [
     title: "Seating Area",
     description: "Comfortable seating arrangements outdoors.",
   },
-  {
-    type: "image",
-    src: outdoorIMG6,
-    title: "Fountain",
-    description: "Decorative water fountain in the garden.",
-  },
+  // {
+  //   type: "image",
+  //   src: outdoorIMG6,
+  //   title: "Fountain",
+  //   description: "Decorative water fountain in the garden.",
+  // },
   {
     type: "image",
     src: outdoorIMG7,

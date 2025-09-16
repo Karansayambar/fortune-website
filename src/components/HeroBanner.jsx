@@ -52,17 +52,17 @@ const HeroBanner = () => {
           difference of premium real estate service.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <button className="bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1">
             View Properties
           </button>
           <button className="bg-transparent border-2 border-white hover:bg-white hover:bg-opacity-10 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300">
             Schedule a Tour
           </button>
-        </div>
+        </div> */}
 
         <div className="animate-bounce">
-          <p className="text-gray-400 mb-2 text-sm">Explore listings</p>
+          <p className="text-gray-100 mb-2 text-xl">Scroll Listings</p>
           <svg
             className="w-8 h-8 mx-auto text-amber-400"
             fill="none"
