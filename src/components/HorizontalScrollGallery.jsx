@@ -677,7 +677,7 @@ const HorizontalScrollGallery = () => {
                     key={index}
                     className="flex-shrink-0 w-full h-screen relative flex items-center justify-center p-4 bg-black"
                   >
-                    <div className=" z-20 text-center mb-6">
+                    <div className=" z-20 text-center mb-6 p-8">
                       <h2 className="text-6xl font-bold text-white">
                         {sectionTitle}
                       </h2>
@@ -705,7 +705,7 @@ const HorizontalScrollGallery = () => {
                       )}
                       <div className="absolute inset-0 bg-black/30" />
                     </div>
-                    <div className="relative z-10 w-full max-w-6xl mx-auto">
+                    <div className="relative z-10 w-full max-w-7xl mx-auto">
                       <div className="relative w-full h-[70vh] max-h-[800px] overflow-hidden shadow-2xl rounded-[50px]">
                         {firstItem.type === "video" ? (
                           <div>
@@ -728,28 +728,23 @@ const HorizontalScrollGallery = () => {
                                 setIsModalOpen(true);
                               }}
                             >
-                              <div className="animate-bounce flex">
+                              <div className=" flex">
                                 <div className="flex flex-col text-center text-amber-400">
-                                  <p className="text-amber-400 mb-2 font-bold text-xl">
+                                  {/* <p className="text-white mb-2 font-bold text-2xl">
                                     To Explore More
-                                  </p>
-                                  <p className="text-amber-400 mb-2 font-bold text-xl">
-                                    Click Here
-                                  </p>
+                                  </p> */}
+                                  <div className="relative flex items-center justify-center">
+                                    {/* Waves */}
+                                    <span className="absolute w-30 h-30 rounded-full bg-white opacity-30 animate-[pulseWave_2.5s_linear_infinite]" />
+                                    <span className="absolute w-30 h-30 rounded-full bg-white opacity-30 animate-[pulseWave_2.5s_linear_infinite_0.8s]" />
+                                    <span className="absolute w-30 h-30 rounded-full bg-white opacity-30 animate-[pulseWave_2.5s_linear_infinite_1.6s]" />
+
+                                    {/* Button */}
+                                    <div className="relative z-10 text-white px-5 py-13 font-bold text-xl border border-white rounded-[50%] bg-transparent">
+                                      Click Here
+                                    </div>
+                                  </div>
                                 </div>
-                                <svg
-                                  className="w-15 h-18 mx-auto text-amber-400"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  viewBox="0 0 24 24"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                                  />
-                                </svg>
                               </div>
                             </div>
                           </div>
@@ -773,8 +768,8 @@ const HorizontalScrollGallery = () => {
                         )}
                       </div>
                     </div>
-                    <div className=" w-100 z-20 text-center mb-6 p-5">
-                      <p className="text-2xl text-gray-300">
+                    <div className=" max-w-100 z-20 text-center p-5">
+                      <p className="text-4xl text-gray-400">
                         {sectionDescription}
                       </p>
                     </div>
@@ -785,8 +780,8 @@ const HorizontalScrollGallery = () => {
           </div>
 
           {/* Desktop Controls */}
-          <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center space-y-4">
-            <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/20 shadow-lg space-x-6">
+          <div className="relative z-20 flex flex-col items-center space-y-4">
+            <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex items-center bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/20 shadow-lg space-x-6">
               <button
                 onClick={() => scrollToIndex(currentIndex - 1)}
                 disabled={currentIndex === 0}
@@ -828,8 +823,8 @@ const HorizontalScrollGallery = () => {
                 </svg>
               </button>
             </div>
-            <div className="flex items-baseline space-x-2 text-white font-light tracking-widest text-5xl">
-              <span className="relative h-14 overflow-hidden w-14 flex justify-center">
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-baseline space-x-2 text-white font-light tracking-widest text-5xl">
+              <span className="relative h-14 overflow-hidden w-14 flex justify-center text-amber-400">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={currentIndex}
@@ -862,6 +857,7 @@ const HorizontalScrollGallery = () => {
                 const firstItem = items[0];
                 return (
                   <>
+                    {/* Header */}
                     <div className="absolute top-10 text-center px-4">
                       <h2 className="text-4xl font-bold text-white">
                         {sectionTitle}
@@ -870,6 +866,8 @@ const HorizontalScrollGallery = () => {
                         {sectionDescription}
                       </p>
                     </div>
+
+                    {/* Background */}
                     <div className="w-full h-full absolute inset-0 opacity-30">
                       {firstItem.type === "video" ? (
                         <video
@@ -888,8 +886,10 @@ const HorizontalScrollGallery = () => {
                       )}
                       <div className="absolute inset-0 bg-black/30" />
                     </div>
+
+                    {/* Preview with overlay */}
                     <div className="relative z-10 w-full max-w-lg mx-auto">
-                      <div className="relative w-full h-[60vh] overflow-hidden shadow-xl ">
+                      <div className="relative w-full h-[60vh] overflow-hidden shadow-xl">
                         {firstItem.type === "video" ? (
                           <video
                             src={firstItem.src}
@@ -912,6 +912,34 @@ const HorizontalScrollGallery = () => {
                             }}
                           />
                         )}
+
+                        {/* Overlay (always visible) */}
+                        <div
+                          className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center cursor-pointer"
+                          onClick={() => {
+                            setCategory(items);
+                            setIsModalOpen(true);
+                          }}
+                        >
+                          <div className=" flex">
+                            <div className="flex flex-col text-center text-amber-400">
+                              {/* <p className="text-white mb-2 font-bold text-2xl">
+                                    To Explore More
+                                  </p> */}
+                              <div className="relative flex items-center justify-center">
+                                {/* Waves */}
+                                <span className="absolute w-20 h-20 rounded-full bg-white opacity-30 animate-[pulseWave_2.5s_linear_infinite]" />
+                                <span className="absolute w-20 h-20 rounded-full bg-white opacity-30 animate-[pulseWave_2.5s_linear_infinite_0.8s]" />
+                                <span className="absolute w-20 h-20 rounded-full bg-white opacity-30 animate-[pulseWave_2.5s_linear_infinite_1.6s]" />
+
+                                {/* Button */}
+                                <div className="relative z-10 text-white px-2 py-8 font-bold text-lg border border-white rounded-[50%] bg-transparent">
+                                  Click Here
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </>
@@ -921,8 +949,8 @@ const HorizontalScrollGallery = () => {
           )}
 
           {/* Mobile Controls */}
-          <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center space-y-4">
-            <div className="flex items-center bg-white/10 backdrop-blur-md rounded-full px-4 py-2 border border-white/20 shadow-lg space-x-4">
+          <div className="relative  z-20 flex flex-col items-center space-y-4">
+            <div className="absolute bottom-16 left-1/2 -translate-x-1/2 flex items-center bg-white/10 backdrop-blur-md rounded-full px-4 py-2 border border-white/20 shadow-lg space-x-4">
               <button
                 onClick={() => scrollPrev()}
                 disabled={currentIndex === 0}
@@ -964,8 +992,8 @@ const HorizontalScrollGallery = () => {
                 </svg>
               </button>
             </div>
-            <div className="flex items-baseline space-x-2 text-white font-light tracking-widest text-3xl">
-              <span className="relative h-10 overflow-hidden w-10 flex justify-center">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-baseline space-x-2 text-white font-light tracking-widest text-3xl">
+              <span className="relative h-10 overflow-hidden w-10 flex justify-center text-amber-400">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={currentIndex}
@@ -979,7 +1007,7 @@ const HorizontalScrollGallery = () => {
                   </motion.span>
                 </AnimatePresence>
               </span>
-              <span className="text-xl opacity-70">
+              <span className="text-2xl opacity-70">
                 /{String(data.length).padStart(2, "0")}
               </span>
             </div>
