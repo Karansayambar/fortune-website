@@ -35,7 +35,7 @@ const HeroBanner = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-8 max-w-6xl mx-auto">
         <div className="mb-10">
-          <h2 className="text-2xl font-light tracking-widest">ELITE ESTATES</h2>
+          <h2 className="text-2xl font-light tracking-widest">FORTUNE VILLA</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mt-2"></div>
         </div>
 
@@ -48,8 +48,8 @@ const HeroBanner = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
-          Luxury homes in the most desirable locations. Experience the
-          difference of premium real estate service.
+          Luxury villa in the most desirable location. Experience the difference
+          of premium real estate service.
         </p>
 
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
